@@ -300,7 +300,7 @@ a:hover {
 }
 figure {
   background: #fff;
-  margin-bottom: 45px;
+  margin-bottom: 0px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
 figure .img-wrapper {
@@ -370,9 +370,9 @@ figure figcaption {
 figure figcaption h4 {
   margin: 0;
 }
-figure figcaption h4 a {
-  color: #02bdd5;
-}
+/*figure figcaption h4 a {*/
+/*  color: #00aeef;*/
+/*}*/
 figure figcaption p {
   font-size: 14px;
   margin-bottom: 0;
@@ -1086,4 +1086,12 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.col-sm-4:hover a{
+    color:#00aeef;
+}
+.col-sm-4:hover p{
+    color:#00aeef;
 }
