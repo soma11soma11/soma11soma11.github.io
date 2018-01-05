@@ -150,14 +150,18 @@ a:hover {
 
 }
 #hero-area:before {
-  content: '';
-  z-index: 9;
-  /*background: rgba(255, 255, 255, 0.78);*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:80px;
+    margin-left:80px;
+    background-color: green;
 }
 #hero-area .block {
   position: relative;
