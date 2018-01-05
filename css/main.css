@@ -140,14 +140,13 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../images/robot.png') no-repeat;
-  background-size: 22%;
+
   background-attachment: fixed;
-  padding: 15% 0 20%;
+  padding: 15% 20%;
   /*color: #fff;*/
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   /*position: relative;*/
-  background-position: 5% 85%;
+  background-size: 100% 100%;
 
 }
 #hero-area:before {
