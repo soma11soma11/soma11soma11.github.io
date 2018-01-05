@@ -146,23 +146,10 @@ a:hover {
   /*color: #fff;*/
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
   /*position: relative;*/
-  background-size: 100% 100%;
+
 
 }
-#hero-area:before {
-    display: block;
-    position:absolute;
-    height:auto;
-    bottom:0;
-    top:0;
-    left:0;
-    right:0;
-    margin-top:20px;
-    margin-bottom:20px;
-    margin-right:80px;
-    margin-left:80px;
-    background-color: green;
-}
+
 #hero-area .block {
   position: relative;
   z-index: 999;
