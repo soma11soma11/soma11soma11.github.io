@@ -30,6 +30,7 @@ h2 {
 a:hover {
   text-decoration: none;
 }
+
 .section-heading {
   text-align: center;
   margin-bottom: 65px;
@@ -1085,3 +1086,19 @@ article {
 .col-sm-4:hover p{
     color:#00aeef;
 }
+
+#resume {
+    color:#00aeef;
+}
+#resume:hover {
+    color:#000000;
+}
+.col-md-6{
+text-align: justify;
+}
+
+.col-sm-4{
+    text-align: justify;
+}
+
+
