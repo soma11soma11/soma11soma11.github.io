@@ -1080,7 +1080,7 @@ article {
 }
 
 
-.col-sm-4:hover a{
+.col-sm-4:hover h4{
     color:#00aeef;
 }
 .col-sm-4:hover p{
@@ -1099,6 +1099,9 @@ text-align: justify;
 
 .col-sm-4{
     text-align: justify;
+}
+.col-sm-4 a{
+    font-family: 'Roboto', sans-serif;
 }
 
 
