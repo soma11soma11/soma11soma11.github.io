@@ -44,11 +44,12 @@
 				a.href = "http://google.com";
 				div.appendChild(a);
 
-				var myImage = document.createElement( 'img' );
-				myImage.src = 'hoge.JPG';
-				myImage.style.width = '480px';
-				myImage.style.height = '360px';
-				a.appendChild(myImage);
+				var img = document.createElement( 'img' );
+				img.src = 'hoge.JPG';
+				img.style.width = '480px';
+				img.style.height = '360px';
+				img.href = "http://google.com"
+				a.appendChild(img);
 
 				// var iframe = document.createElement( 'iframe' );
 				// iframe.style.width = '480px';
