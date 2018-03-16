@@ -21,17 +21,12 @@
 	</head>
 	<body>
 
-		<section id="top" >
+
 			<div id="typed-strings">
 				 <h1>こんにちは</h1>
 				 <h1>Hello, My name is&nbsp;&nbsp;<em>Soma Suzuki</em></h1>
 			</div>
 			<span id="typed"></span>
-			<a href="google.com"><p>hogehoge</p></a>
-
-
-		</section>
-
 
     <script src="js/typed.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,8 +34,6 @@
 		<script src="js/three.js"></script>
 		<script src="js/TrackballControls.js"></script>
 		<script src="js/CSS3DRenderer.js"></script>
-
-
 
 		<div id="container"></div>
 		<div id="blocker"></div>
@@ -50,26 +43,31 @@
 			var camera, scene, renderer;
 			var controls;
 
+
+
 			var Element = function ( id, x, y, z, ry ) {
 
 				var div = document.createElement( 'div' );
 				div.style.width = '480px';
 				div.style.height = '360px';
 				div.style.backgroundColor = '#000';
-				// document.body.appendChild(div);
+				document.body.appendChild(div);
+
+				var a = document.createElement('a');
+				a.href = "http://google.com";
+				div.appendChild(a);
 
 
-				var iframe = document.createElement( 'iframe' );
-				iframe.style.width = '480px';
-				iframe.style.height = '360px';
-				iframe.style.border = '0px';
-				iframe.src = [ 'https://www.youtube.com/embed/', id, '?rel=0' ].join( '' );
-				div.appendChild( iframe );
+				var img = document.createElement('img');
+				img.src = 'hoge.png';
+				img.style.width = '480px';
+				img.style.height = '360px';
+				a.appendChild(img);
+
 
 				var object = new THREE.CSS3DObject( div );
 				object.position.set( x, y, z );
 				object.rotation.y = ry;
-
 
 
 				return object;
