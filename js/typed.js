@@ -1036,7 +1036,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 var typed = new Typed('#typed', {
 	stringsElement: '#typed-strings',
-	typeSpeed: 150,
+	typeSpeed: 1,
 	backSpeed: 50,
 	backDelay: 700,
 	showCursor: true,

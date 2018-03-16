@@ -4,32 +4,28 @@
 		<title>Soma Suzuki</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="icon" type="image/png" href="favicon_s.ico">
+		<link rel="stylesheet" href="css/main.css">
+		<title>SOMA</title>
 		<style>
 			html, body {
 				height: 100%;
 				overflow: hidden;
 			}
-			#blocker {
-				position: absolute;
-				/* background-color: rgba(255, 0, 0, 0.5); */
-				top: 0px;
-				left: 0px;
-				width: 100%;
-				height: 100%;
-			}
 		</style>
 	</head>
 	<body>
-
+			<!-- <div id="typed-strings">
+				 <h1>こんにちは</h1>
+				 <h1>Hello, My name is&nbsp;&nbsp;Soma Suzuki</h1>
+			</div>
+			<span id="typed"></span> -->
 
 			<div id="typed-strings">
-				 <h1>こんにちは</h1>
-				 <h1>Hello, My name is&nbsp;&nbsp;<em>Soma Suzuki</em></h1>
+				 <p>そーまちゃんの為に働かないと…誕生日30連そーま、そーまのばあちゃんになった妄想してたらそーまめちゃくちゃいいこ過ぎてばあちゃん目頭熱くなそーまだらけ同じキーボード買ったてw今週のそーまは某クマ風味そーまゼツボー荘の主演やってたの忘れてたそーまかわいくなったねぇ次イベそーま欲しいからスカウト回すべきか否かそーまポイボかな復刻頑張ってそーま以外貰えたので次もぼちほちやりますねそーま！！！ ゆうくん！！！そーまとみつるとつむぎとそら行方不明ですどこまぢ新幹線高いせめて1万くらいにしてほしいよ笑そーまなんだかんだあそんでくれるんだぞワーそーまや〜そーまとマグナペア狩りして遊んでどうも、そーま！トランジスタですそーまぁ！問題！ソーマかわいそーそーまそーまよさんはなにオタクなのかそーま就職先なにーそーまありがとぉぉぉおかえりそーまそーまに脅されて撮った変顔がこちら私もそーまさんのお写真大好きですよさいとーそーま氏の声聴くだけで涙が出てくるうまそーまぐおさん金持ち説いまそーまのくるまあらってるそーまさんのシャルルで寝落ちなんて幸せすぎるまじか！そーま斎藤そーま一枚どんくらいになるかなあそーまは155くらい神崎そーまマンそーま課金揺らいでるってマア垢でさいとーそーまとかサイコーかよそーまがランボだったら諦めがつくからそーまは２年生の中で一番好きだよそーまこの前ポイボだからランボそーまアングルがランボ感そーまとよっちんのやつしか入ってなかったそーまじゃなくてソーマねwそーま君ラーメンありがとうございましたさーそーまん撮るっゴキブリがそーまを殺してくれた～</p>
 			</div>
 			<span id="typed"></span>
-
-
-
 
     <script src="js/typed.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -46,9 +42,7 @@
 			var camera, scene, renderer;
 			var controls;
 
-
-
-			var Element = function ( id, x, y, z, ry ) {
+			var Element = function ( href,id, x, y, z, ry ) {
 
 				var div = document.createElement( 'div' );
 				div.style.width = '480px';
@@ -57,12 +51,12 @@
 				document.body.appendChild(div);
 
 				var a = document.createElement('a');
-				a.href = "http://google.com";
+				a.href = [ href, '?rel=0' ].join( '' );
 				div.appendChild(a);
 
 
 				var img = document.createElement('img');
-				img.src = 'hoge.png';
+				img.src = [ 'image/', id, '?rel=0' ].join( '' );
 				img.style.width = '480px';
 				img.style.height = '360px';
 				a.appendChild(img);
@@ -96,24 +90,20 @@
 				container.appendChild( renderer.domElement );
 
 				var group = new THREE.Group();
-				group.add( new Element( 'SJOz3qjfQXU', 0, 0, 240, 0 ) );
-				group.add( new Element( 'Y2-xZ-1HE-Q', 240, 0, 0, Math.PI / 2 ) );
-				group.add( new Element( 'IrydklNpcFI', 0, 0, - 240, Math.PI ) );
-				group.add( new Element( '9ubytEsCaS0', - 240, 0, 0, - Math.PI / 2 ) );
+				var R = 240 / (Math.tan(Math.PI / 7));
+				group.add( new Element( "soma.html", 'soma2.png', 0, 0, - R, Math.PI ) );
+				group.add( new Element( "https://arxiv.org/abs/1712.07887", 'urban_simulation.png', - R*Math.cos(Math.PI * 25/14), 0, R*Math.sin(Math.PI * 25/14), 9 * Math.PI / 7 ) );
+				group.add( new Element( "https://medium.com/@somasuzuki/person-identification-55e323ca5507", 'person_identification.png', - R*Math.cos(Math.PI * 29/14), 0, R*Math.sin(Math.PI * 29/14), 11 * Math.PI / 7 ) );
+				group.add( new Element( "https://medium.com/@somasuzuki/open-music-initiative-summer-lab-2017-d26f4a5aad2a", 'omi.png', - R*Math.cos(Math.PI * 33/14), 0, R*Math.sin(Math.PI * 33/14), 13 * Math.PI / 7 ) );
+				group.add( new Element( "https://medium.com/@somasuzuki/pedestrian-trajectory-generator-bfafe23165a9", 'map.png', - R*Math.cos(Math.PI * 37/14), 0, R*Math.sin(Math.PI * 37/14), 15 * Math.PI / 7 ) );
+				group.add( new Element( "https://arxiv.org/abs/1801.00464", 'irl.png', - R*Math.cos(Math.PI * 41/14), 0, R*Math.sin(Math.PI * 41/14), 17 * Math.PI / 7 ) );
+				group.add( new Element( "https://gist.github.com/soma11soma11/7439030d511cd4757b2078cf6f4f0c50", 'energy_simulation.png', - R*Math.cos(Math.PI * 45/14), 0, R*Math.sin(Math.PI * 45/14), 19 * Math.PI / 7 ) );
 				scene.add( group );
 
 				controls = new THREE.TrackballControls( camera );
 				controls.rotateSpeed = 4;
 
 				window.addEventListener( 'resize', onWindowResize, false );
-
-				// Block iframe events when dragging camera
-
-				var blocker = document.getElementById( 'blocker' );
-				// blocker.style.display = 'none';
-
-				document.addEventListener( 'mousedown', function () { blocker.style.display = ''; } );
-				document.addEventListener( 'mouseup', function () { blocker.style.display = 'none'; } );
 
 			}
 
@@ -125,13 +115,10 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 
 			}
-
 			function animate() {
-
 				requestAnimationFrame( animate );
 				controls.update();
 				renderer.render( scene, camera );
-
 			}
 
 		</script>
