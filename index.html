@@ -8,8 +8,7 @@
 
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Soma Suzuki portfolio" />
-		<!-- <meta name="twitter:image" content="image/og_image.png" /> -->
-		<meta property="og:image" content="https://www.google.co.uk/search?q=hoge&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjctafH7PHZAhWrC8AKHf-FDnEQ_AUICigB&biw=1440&bih=803#imgrc=D_SdG0OkaTe5fM:">
+		<meta name="twitter:image" content="image/og_image.png" />
 
 
 		<link rel="icon" type="image/png" href="favicon_s.ico">
@@ -85,8 +84,8 @@
 
 				var container = document.getElementById( 'container' );
 
-				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 5000 );
-				camera.position.set( 300, 500, 1500 );
+				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 50 );
+				camera.position.set( 300, 800, 3000 );
 
 				scene = new THREE.Scene();
 
@@ -98,11 +97,11 @@
 
 				var group = new THREE.Group();
 				var R = 240 / (Math.tan(Math.PI / 7));
-				group.add( new Element( "soma.html", 'soma2.png', 0, 0, - R, Math.PI ) );
+				group.add( new Element( "https://medium.com/@somasuzuki/pedestrian-trajectory-generator-bfafe23165a9", 'map.png', 0, 0, - R, Math.PI ) );
 				group.add( new Element( "https://arxiv.org/abs/1712.07887", 'urban_simulation.png', - R*Math.cos(Math.PI * 25/14), 0, R*Math.sin(Math.PI * 25/14), 9 * Math.PI / 7 ) );
 				group.add( new Element( "https://medium.com/@somasuzuki/person-identification-55e323ca5507", 'person_identification.png', - R*Math.cos(Math.PI * 29/14), 0, R*Math.sin(Math.PI * 29/14), 11 * Math.PI / 7 ) );
 				group.add( new Element( "https://medium.com/@somasuzuki/open-music-initiative-summer-lab-2017-d26f4a5aad2a", 'omi.png', - R*Math.cos(Math.PI * 33/14), 0, R*Math.sin(Math.PI * 33/14), 13 * Math.PI / 7 ) );
-				group.add( new Element( "https://medium.com/@somasuzuki/pedestrian-trajectory-generator-bfafe23165a9", 'map.png', - R*Math.cos(Math.PI * 37/14), 0, R*Math.sin(Math.PI * 37/14), 15 * Math.PI / 7 ) );
+				group.add( new Element( "soma.html", 'soma2.png', - R*Math.cos(Math.PI * 37/14), 0, R*Math.sin(Math.PI * 37/14), 15 * Math.PI / 7 ) );
 				group.add( new Element( "https://arxiv.org/abs/1801.00464", 'irl.png', - R*Math.cos(Math.PI * 41/14), 0, R*Math.sin(Math.PI * 41/14), 17 * Math.PI / 7 ) );
 				group.add( new Element( "https://gist.github.com/soma11soma11/7439030d511cd4757b2078cf6f4f0c50", 'energy_simulation.png', - R*Math.cos(Math.PI * 45/14), 0, R*Math.sin(Math.PI * 45/14), 19 * Math.PI / 7 ) );
 				scene.add( group );
