@@ -1042,8 +1042,6 @@ var typed = new Typed('#typed', {
 	showCursor: true,
 	cursorChar: '|',
 
-
-
 });
 
 
