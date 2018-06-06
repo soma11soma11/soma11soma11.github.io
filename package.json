@@ -1,0 +1,32 @@
+{
+  "name": "soma11soma11.github.io",
+  "version": "1.0.0",
+  "description": "my portfolio desu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soma11soma11/soma11soma11.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soma11soma11/soma11soma11.github.io/issues"
+  },
+  "homepage": "https://github.com/soma11soma11/soma11soma11.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.3",
+    "gulp-uglify": "^3.0.0",
+    "uglify-js": "^3.4.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "soma11soma11.github.io",
+  "description": "my portfolio desu",
+  "main": "index.js",
+  "authors": [
+    "soma11soma11 <h2so4cos0@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/soma11soma11/soma11soma11.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "angular": "^1.7.0",
+    "backbone": "^1.3.3"
+  }
+}
