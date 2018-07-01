@@ -96,7 +96,7 @@
 				container.appendChild( renderer.domElement );
 
 				// Image width = 480px
-				n = 9
+				n = 10
 
 				var group = new THREE.Group();
 				var R = 240 / (Math.tan(Math.PI / n));
@@ -109,6 +109,8 @@
 				group.add( new Element( "https://medium.com/@somasuzuki/fujisawa-sustainable-smart-town-f38ffc26bf2", 'pana.png', - R*Math.cos(Math.PI * (3/2 + 12/n)), 0, R*Math.sin(Math.PI * (3/2 + 12/n)), (n+12) * Math.PI / n ) );
 				group.add( new Element( "https://city-blender.com/", 'blender.png', - R*Math.cos(Math.PI * (3/2 + 14/n)), 0, R*Math.sin(Math.PI * (3/2 + 14/n)), (n+14) * Math.PI / n ) );
 				group.add( new Element( "https://gist.github.com/soma11soma11/7439030d511cd4757b2078cf6f4f0c50", 'energy_simulation.png', - R*Math.cos(Math.PI * (3/2 + 16/n)), 0, R*Math.sin(Math.PI * (3/2 + 16/n)), (n+16) * Math.PI / n ) );
+				group.add( new Element( "https://medium.com/@somasuzuki/ongaku-mura-colony-hackathon-f2a2673e0b50", 'colony.png', - R*Math.cos(Math.PI * (3/2 + 18/n)), 0, R*Math.sin(Math.PI * (3/2 + 18/n)), (n+18) * Math.PI / n ) );
+
 				scene.add( group );
 
 				controls = new THREE.TrackballControls( camera );
